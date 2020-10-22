@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/custom.css">
+<title>Kartik's Cookbook</title>
+
+</head>
+
+<body>
+    <header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo1.png" alt="logo" />
+				</a>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="forms.html">Submit Your Recipe</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    </header>
+
+    <div id="slides" class="cover-slides">
+		<ul class="slides-container">
+			<li class="text-left">
+				<img src="images/cover1.jpg" alt="cover">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>Want to <br> submit your recipe?</strong></h1>
+							<p class="m-b-40">fill the form below.</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-left">
+				<img src="images/cover2.jpg" alt="cover">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>Want to <br> submit your recipe?</strong></h1>
+							<p class="m-b-40">fill the form below.</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-left">
+				<img src="images/cover3.jpg" alt="cover">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+                            <h1 class="m-b-20"><strong>Want to <br> submit your recipe?</strong></h1>
+							<p class="m-b-40">fill the form below.</p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="slides-navigation">
+			<a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+		</div>
+	</div>
+
+<br><br>
+<div class="bg-img"></div>
+<form action="index.html" method="GET">
+    <table border="4" align="center" style="border-color: orangered;">
+    <tr>
+        <td colspan="2">
+            <h2><b>Fill in your details</b></h2>
+        </td></tr>
+        <tr>
+        <td>
+            <label for="fname" style="color: black; font-size: 18px;">Enter your full name</label>
+        </td>
+        <td>
+            <input type="text" id="fname" name="fname" required>
+        </td>
+    </tr>
+   <tr>
+        <td>
+            <label for="dob" style="color: black; font-size: 18px;">Enter your Date of Birth:</label>
+        </td>
+        <td>
+            <input type="date" id="dob" name="dob" required>
+        </td>
+    </tr> 
+    <tr>
+        <td style="color: black; font-size: 18px;">
+            Select your Gender:
+        </td>
+        <td>
+            <label for="Male">Male</label style="color: black; font-size: 14px;">
+            <input type="radio" id="Male" name="Gender" value="Male" required>
+            <label for="Female" style="color: black; font-size: 14px;">Female</label>
+            <input type="radio" id="Female" name="Gender" value="Female" checked>
+            <label for="Others" style="color: black; font-size: 14px;">Others</label>
+            <input type="radio" id="Others" name="Gender" value="Others">
+
+        </td>
+    </tr>  
+    <tr>
+        <td>
+            <label for="photo" style="color: black; font-size: 18px;">Upload your dish:</label>
+        </td>
+        <td>
+            <input type="file" id="photo" name="photo">
+        </td>
+    </tr> 
+    <tr>
+        <td>
+            <label for="aboutme" style="color: black; font-size: 18px;">Write 300 words about your dish:</label>
+        </td>
+        <td>
+            <textarea name="aboutme" id="aboutme" cols="30" rows="3"></textarea>
+        </td>
+    </tr> 
+    <tr>
+    <td>
+        <button type="submit">Submit</button>
+    </td>
+    <td>
+       <button type="reset">Reset</button>
+    </td>
+    </tr>
+    </table>
+    <input type="hidden" name="code" value="abc">
+</form>
+<br><br>
+<footer class="footer-area bg-f">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <h3>About Us</h3>
+                <p>This is a small recipe book i curated for all the food lovers like you, i hope you enjoy it!</p>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <h3>Contact information</h3>
+                <p class="lead">NIFT, Delhi</p>
+                <p class="lead"><a href="#">33333333</a></p>
+                <p><a href="#"> cookbook@gmail.com</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>Opening hours</h3>
+                <p><span class="text-color">Monday: </span>Closed</p>
+                <p><span class="text-color">Tue-Sun :</span> 9:00Am - 10PM</p>
+            </div>
+        </div>
+    </div>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
